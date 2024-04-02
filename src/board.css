@@ -1,0 +1,45 @@
+.container,
+.row,
+.col {
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.board-btn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0px;
+}
+
+@media (prefers-color-scheme: light) {
+    .board-btn {
+        border: 0.1rem solid var(--bs-black);
+    }
+
+    .board-btn:hover {
+        border: 0.1rem solid var(--bs-black);
+        background-color: var(--bs-highlight-color) !important;
+        opacity: 0.5;
+    }
+
+    .board-btn:disabled {
+        border: 0.1rem solid var(--bs-black);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .board-btn {
+        border: 0.1rem solid var(--bs-white);
+    }
+
+    .board-btn:hover {
+        border: 0.1rem solid var(--bs-white);
+        background-color: var(--bs-highlight-color) !important;
+        opacity: 0.5;
+    }
+
+    .board-btn:disabled {
+        border: 0.1rem solid var(--bs-white);
+    }
+}
