@@ -1,7 +1,7 @@
 {
   "name": "quantictactoe",
   "productName": "Quan's TicTacToe",
-  "version": "1.0.0",
+  "version": "2024.04.03",
   "description": "Quan's TicTacToe",
   "main": ".webpack/main",
   "scripts": {
