@@ -11,6 +11,8 @@ import { FuseV1Options, FuseVersion } from '@electron/fuses';
 import { mainConfig } from './webpack.main.config';
 import { rendererConfig } from './webpack.renderer.config';
 
+import path from 'path';
+
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
@@ -18,7 +20,10 @@ const config: ForgeConfig = {
   },
   rebuildConfig: {},
   makers: [
-    new MakerSquirrel({ setupIcon: 'images/icon.ico' }),
+    new MakerSquirrel({ 
+      setupIcon: 'images/icon.ico',
+      iconUrl: path.resolve('images', 'icon.ico')
+    }),
     new MakerZIP({}, ['darwin']),
     new MakerRpm({ options: { icon: 'images/icon.png' } }),
     new MakerDeb({ options: { icon: 'images/icon.png' } })
