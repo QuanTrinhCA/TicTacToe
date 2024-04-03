@@ -21,7 +21,7 @@ const config: ForgeConfig = {
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({ 
-      setupIcon: 'images/icon.ico',
+      setupIcon: path.resolve('images', 'icon.ico'),
       iconUrl: path.resolve('images', 'icon.ico')
     }),
     new MakerZIP({}, ['darwin']),
