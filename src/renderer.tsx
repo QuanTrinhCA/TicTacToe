@@ -209,7 +209,7 @@ export default class TicTacToe extends React.Component<TicTacToeProps> {
     return (
       <div
         data-bs-theme={this.state.darkMode ? 'dark' : 'light'}
-        className='bg-body'>
+        className='bg-transparent'>
         <Button
           variant={this.state.darkMode ? 'light' : 'dark'}
           className='position-absolute top-1 end-0 translate-middle theme-btn'
